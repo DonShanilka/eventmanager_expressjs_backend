@@ -1,0 +1,19 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model EventData {
+  eventId        Int      @id @default(autoincrement())
+  eventName      String
+  eventDate      String
+  location       String
+  description    String
+  price          String
+  mobile         String
+  organizerEmail String
+}
