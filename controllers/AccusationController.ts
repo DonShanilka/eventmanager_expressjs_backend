@@ -1,6 +1,6 @@
 import express from 'express';
 import { Accusation } from '../model/Event';
-import { AccusationAdd, AccusationDelete, AccusationGetAll, AccusationUpdate } from '../services/AccusationService';
+import { AccusationAdd, AccusationDelete, AccusationGetAll, AccusationUpdate } from '../services/EventService';
 
 const router = express.Router();
 
