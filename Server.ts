@@ -4,7 +4,7 @@ const app = express();
 const cors = require('cors');
 import fileUpload from "express-fileupload";
 
-// const guestRouters = require('./routes/guestRouter');
+const eventRouter = require('./routes/eventRouter');
 
 
 app.use(bodyParser.json());
@@ -14,7 +14,7 @@ app.use(fileUpload());
 app.use(express.json());
 app.use(express.urlencoded({ extended : true }));
 
-// app.use('/api', guestRouters);
+app.use('/api', eventRouter);
 
 // app.use("/downloads", express.static("downloads"));
 
